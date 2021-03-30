@@ -1,0 +1,286 @@
+<!-- Comentártio HTML-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Codificação de caracteres especiais-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Portabilidade para dispositivos mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Imagem</h1>
+    <!--Exemplo de elementos vazios, não possuem fechamento-->
+    <img
+      src="$CaminhoParaAImagem"
+      alt="texto alternativo para mostrar a respeito da imagem"
+    />
+
+    <h1>Input e atributo booleano</h1>
+    <!-- atributos booleanos, exemplo: disabled no input-->
+    <input type="text" disabled />
+
+    <h1>Link ou Ancora</h1>
+    <!--Linkando sites-->
+    <a href="www.google.com">Link do google na mesma página</a>
+    <br>
+    <a href="www.google.com" target="_blank">Link do google em outra página usando black</a>
+    <br>
+    <a href="mailto:pedropaiva00@gmail.com">Link para envio de email</a>
+    <br>
+    <a href="tel:+5585997509999">Link para ligação por telefone</a>
+    <br>
+    <a href="#Abreviacao">Link para seção na página</a> <spam>Neste exemplo leva pra seção abreviações da página</spam>
+    <br>
+    <a href="outraPagina.html">Link para outra página do meu projeto</a>
+    <h1>Atributos globais</h1>
+    <!--Atributos globais
+        - class: usada pra aplicar estilos css e classificar no javascript
+        - contenteditable: recebe true ou false para poder editar ou não o conteúdo 
+        - data: data-id, data-qualquercoisa, serve para tagear para uso com javascript
+        - hidden: esconde o elemento
+        - id: nomeia o elemento unicamente
+        - style: atribiu características ao elemento
+        - tabindex: ao apertar a tecla tab define a ordem de seleção
+        - title: define um título para o elemento, com o mouse over no elemento é apresentado
+    -->
+    <!--Exemplos-->
+    <div
+      class="carrinho"
+      contenteditable="true"
+      id="1"
+      style="color: blue"
+      tabindex="1"
+      title="titulo aqui"
+    >
+      conteúdo
+    </div>
+    <div
+      class="carrinho"
+      contenteditable="false"
+      id="2"
+      style="color: chartreuse"
+      tabindex="3"
+    >
+      conteúdo
+    </div>
+    <div
+      class="carrinho"
+      contenteditable="true"
+      id="3"
+      style="color: chocolate"
+      tabindex="2"
+    >
+      conteúdo
+    </div>
+
+    <h1>Usando tags para enfase, importância, e quebra de linha</h1>
+    <!-- usando tags para enfase, importância, e quebra de linha-->
+    <p>
+      Exemplo de parágrafo com palavra em <em>enfase</em> e plavra em
+      <strong>negrito</strong> e com quebra de linha <br />
+      além de um link <a href="www.google.com">link para o google</a>.
+    </p>
+
+    <!-- Quebra de linha pode ser <br>, </br> ou <br/>-->
+
+    <!--Caracteres reservados-->
+    <h1>Caracteres reservados</h1>
+    <!--break space-->
+    <p>&nbsp; Exemplo de parágrafo com break space</p>
+    <!-- < (menor que) e > (maior que) -->
+    <p>
+      &lt; menor que <br />
+      &gt; maior que
+    </p>
+    <!-- & comercial-->
+    <p>&amp;</p>
+    <!-- aspas duplas-->
+    <p>&quot; bla bla bla &quot;</p>
+    <!-- aspas simples-->
+    <p>&apos; bla bla bla &apos;</p>
+
+    <!-- Listas-->
+    <h1>Listas</h1>
+    <h2>Lista sem ordem</h2>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+
+    <h2>Lista de Descrição</h2>
+    <!--Description List-->
+    <dl>
+        <!--Description Term-->
+        <dt>Hyper Text</dt>
+            <!--Description Definition-->
+            <dd>É um hyper texto com possibilidades... </dd>
+        <dt>Markup</dt>
+            <dd>Marcação de texto</dd>
+        <dt>Language</dt>
+            <dd>Linguagem com sua semântica, sintaxe, etc</dd>
+    </dl>
+
+    <h1>Citações</h1>
+    <!--Citações-->
+    <blockquote cite="www.google.com">
+      Aqui vem a citação indicando que a frase foi retirada de um texto externo
+    </blockquote>
+
+    <p>
+      Outra forma de citação: de acordo com
+      <a href="www.google.com"> <cite> google </cite></a>: bla bla bla
+    </p>
+
+    <p>
+      Também é possível citar usando o elemento &quot;q&quot;
+      <q cite="ww.google.com"> aqui vai minha citação</q>
+    </p>
+
+    <h1 id="Abreviacao">Abreviações</h1>
+    <p>
+      Mostra o siginificado da palavra quando mouse over
+      <abbr title="Hipper text Markup Language">HTML</abbr>
+    </p>
+
+    <h1>Representando código de programação</h1>
+    <code>document.querySelector();</code>
+    
+    <!--A tag pre mantem os espaos e quebra de linhas-->
+    <pre>
+        <code>  document.
+            querySelector();</code>
+    </pre>
+<!--Elementos Genéricos-->
+    <h1>Elementos genéricos</h1>
+    <div>
+        a div faz automaticamente
+    </div>
+    <div>quebra de linhas ao final </div>
+
+    <span> span mantem</span>
+    <span> na mesma linha</span>
+
+
+
+
+
+
+<!--Tabelas-->
+<h1>Tabelas</h1>
+<h2>Tabela Básica</h2>
+<table>
+  <!--Table row-->
+  <tr>
+    <!--Table header-->
+    <th>Nome</th>
+    <th>Idade</th>
+  </tr>
+  <tr>
+    <!--Table description-->
+    <td>Mayk</td>
+    <td>35</td>
+  </tr>
+  <tr>
+    <!--Table description-->
+    <td>Pedro</td>
+    <td>31</td>
+  </tr>
+</table>
+
+<h2>Tabela Organizada</h2>
+<table>
+  <caption>Pessoas por idade</caption>
+  <thead>
+    <tr>
+      <!--Table header-->
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+    <tr>
+  </thead>
+  <tbody>
+    <tr>
+      <!--Table description-->
+      <td>Mayk</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <!--Table description-->
+      <td>Pedro</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total:</td>
+      <td>2 pessoas</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2>Table Complexa</h2>
+<table>
+  <colgroup>
+  <col>
+  <col span="2" style="background-color: red;">
+  <col span="2" style="background-color: blue;">
+  </colgroup>
+  <caption>Produzidos x Vendidos por loja</caption>
+  <thead>
+    <tr>
+      <!--Ocupando duas linhas com rowspan-->
+      <th rowspan="2"></th>
+      <!--Ocupando duas colunas com colspan-->
+      <!--a tag scope serve para acessibilidade e define melhor o objetivo do elemento-->
+      <th colspan="2" scope="colgroup">Loja 1</th>
+      <th colspan="2" scope="colgroup">Loja 2</th>
+    </tr>
+    <tr>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+    </tr>
+    <tbody>
+      <tr>
+        <th scope="row">Vassouras</th>
+        <td>50</td>
+        <td>30</td>
+        <td>20</td>
+        <td>20</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Baldes</th>
+        <td>10</td>
+        <td>10</td>
+        <td>30</td>
+        <td>25</td>
+      </tr>
+    </tbody>
+  </thead>
+</table>
+
+
+
+
+    <!--Endereço-->
+    <h1>Endereço de contato no fim de página</h1>
+    <address>
+        <p>Pedro Paiva Alves<br>
+        <strong>Fortaleza, CE</strong>
+        </p>
+    </address>
+  </body>
+</html>
